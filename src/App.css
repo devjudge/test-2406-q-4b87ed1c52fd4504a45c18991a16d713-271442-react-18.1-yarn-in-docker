@@ -1,38 +1,50 @@
+h1 {
+  background-color: white;
+  margin: 0;
+  padding: 1rem 0.6rem 1rem 2rem;
+  /* margin-left: 3rem; */
+}
 .App {
+  width: 90%;
+  margin: 2rem auto;
+}
+h2 {
   text-align: center;
+  color: red;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-container {
+  margin-left: 3.5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-container > .search-input {
+  width: 12rem;
+  padding: 0.3rem 0.2rem;
+  outline: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.input-container > .search-button {
+  padding: 0.4rem 0.4rem;
+  background-color: #6c757d;
   color: white;
+  border: none;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.countries {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  /* grid-template-rows: 10rem; */
+  grid-gap: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.countries > div {
+  text-align: left;
+  margin-left: 1.4rem;
+  background-color: white;
+}
+.countries > div h2 {
+  margin: 0 0 0 0.4rem;
+}
+.countries > div p {
+  margin: 0.3rem;
+}
+.countries > div img {
+  width: 100%;
 }
